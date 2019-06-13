@@ -10,6 +10,11 @@ Author: Peter Safwat
 Version: 1
 */
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
 // Action to run function after all wordpress and plugins are loaded
 add_action( 'wp_loaded', 'main_function');
 
